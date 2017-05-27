@@ -1,5 +1,5 @@
 # Node.js-Express-With-MSSQL
-This is a demo for node.je Express (jade) with mssql  
+This is a demo for node.js express (jade) with mssql  
 
 ## Tech Stack
 - [X] express
