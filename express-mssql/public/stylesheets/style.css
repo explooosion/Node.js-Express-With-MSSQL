@@ -1,11 +1,13 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
     padding: 50px;
     color: #405467;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1em;
 }
 
-a {
+a.icon {
     display: inline-block;
     height: 35px;
     width: 35px;
@@ -15,7 +17,7 @@ a {
     transition: all .2s;
 }
 
-a:hover {
+a.icon:hover {
     opacity: .9;
     font-size: 1.6em;
 }
@@ -23,39 +25,115 @@ a:hover {
 hr {
     position: relative;
     margin: 20px 0;
-    width: 800px;
+    width: 700px;
 }
 
-table {
+
+/******/
+
+a.btn {
+    display: block;
+    margin: 5px 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+.btn {
+    width: 80px;
+    height: 35px;
+    background: #405467;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .2s;
+    margin: 2px 10px;
+}
+
+.btn:hover {
+    background: #354C63;
+}
+
+.text {
+    padding: 0 4px;
+    width: 240px;
+    height: 30px;
+    color: #405467;
+    font-size: 1em;
+    border: 1px solid #ddd;
+}
+
+
+/******/
+
+table.list {
     text-align: left;
     border-collapse: collapse;
     border: 1px solid rgba(221, 221, 221, .78);
 }
 
-table th,
-table td {
+table.list th,
+table.list td {
     height: 40px;
+    min-width: 100px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+table.list thead {
+    background: #405467;
+    color: #ECF0F1;
+}
+
+table.list tbody tr {
+    border-top: 1px solid #ddd;
+    color: #73879C;
+}
+
+table.list tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+table.list tr:hover td {
+    background: rgba(38, 185, 154, .07);
+    border-top: 1px solid rgba(38, 185, 154, .11);
+    border-bottom: 1px solid rgba(38, 185, 154, .11);
+}
+
+
+/******/
+
+table.list-edit {
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid rgba(221, 221, 221, .78);
+}
+
+table.list-edit tr:nth-child(odd) td {
+    background: #f9f9f9;
+}
+
+table.list-edit th,
+table.list-edit td {
+    height: 30px;
     min-width: 70px;
     padding: 5px;
     font-size: 1.2em;
 }
 
-table thead {
+table.list-edit th {
     background: #405467;
     color: #ECF0F1;
 }
 
-table tbody tr {
+table.list-edit tr {
     border-top: 1px solid #ddd;
     color: #73879C;
 }
 
-table tbody tr:nth-child(odd) {
-    background: #f9f9f9;
-}
-
-table tr:hover td {
-    background: rgba(38, 185, 154, .07);
-    border-top: 1px solid rgba(38, 185, 154, .11);
-    border-bottom: 1px solid rgba(38, 185, 154, .11);
+table.list-edit tr:last-child {
+    text-align: center;
 }

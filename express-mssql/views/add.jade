@@ -1,0 +1,27 @@
+extends layout
+
+block add
+    label Create
+    hr
+    form(method='POST' action='/add')
+        table.list-edit
+            tr
+                th UserID
+                td
+                    input(type="text" name="userid").text
+            tr
+                th Passwd
+                td
+                    input(type="password" name="pwd").text
+            tr
+                th UserName
+                td 
+                    input(type="text" name="username").text
+            tr
+                th Email
+                td
+                    input(type="email" name="email").text
+            tr
+                td(colspan="2")
+                    button(type="submit").btn Submit
+                    button(type="button" onclick="javascript: location.href='/'; ").btn Back
