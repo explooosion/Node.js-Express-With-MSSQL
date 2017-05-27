@@ -6,6 +6,10 @@ This is a demo for node.js express (jade) with mssql
 - [X] jade(pug)
 - [X] mssql  
 
+## Database
++ express-demo.bak
++ change config/db.js
+  
 ## Install
 ```bash
 git clone https://github.com/explooosion/Node.js-Express-With-MSSQL.git
