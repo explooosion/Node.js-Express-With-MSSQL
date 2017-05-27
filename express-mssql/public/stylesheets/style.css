@@ -1,0 +1,61 @@
+body {
+    padding: 50px;
+    color: #405467;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+
+a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    color: #405467;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: all .2s;
+}
+
+a:hover {
+    opacity: .9;
+    font-size: 1.6em;
+}
+
+hr {
+    position: relative;
+    margin: 20px 0;
+    width: 800px;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid rgba(221, 221, 221, .78);
+}
+
+table th,
+table td {
+    height: 40px;
+    min-width: 70px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+table thead {
+    background: #405467;
+    color: #ECF0F1;
+}
+
+table tbody tr {
+    border-top: 1px solid #ddd;
+    color: #73879C;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+table tr:hover td {
+    background: rgba(38, 185, 154, .07);
+    border-top: 1px solid rgba(38, 185, 154, .11);
+    border-bottom: 1px solid rgba(38, 185, 154, .11);
+}
